@@ -1,0 +1,369 @@
+body {
+    background-color: black;
+    font-family: 'Varela Round';
+    sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: goldenrod;
+    /*gradient animation*/
+    background: linear-gradient(182deg, #fbbe00, #f9ce4a, #f5db89, #f2e6c0);
+    background-size: 800% 800%;
+    -webkit-animation: header-footer-gradient 10s ease infinite;
+    -moz-animation: header-footer-gradient 10s ease infinite;
+    animation: header-footer-gradient 10s ease infinite;
+    /*gradient animation*/
+    width: 100%;
+    height: 100px;
+}
+
+@-webkit-keyframes header-footer-gradient {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 51% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+@-moz-keyframes header-footer-gradient {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 51% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+@keyframes header-footer-gradient {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 51% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    background-color: silver;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    font-size: 300%;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 10px 0;
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+    padding: 5px 0 20px 0;
+}
+
+#stage {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#charthead {
+    width: 100%;
+    margin: 30px;
+    text-align: center;
+}
+
+#legend {
+    width: 40%;
+    margin: 20px auto;
+    padding: 0 0 10px 0;
+    text-align: center;
+    position: relative;
+    background-color: lightgrey;
+}
+
+#legend ul {
+    padding: 0;
+}
+
+#legend li {
+    list-style: none;
+    display: inline-block;
+    padding: 4px 2px 4px 2px;
+}
+
+#vip {
+  background-color: #fbbe00;
+  width: 30px;
+  display: inline-block;
+}
+
+#available {
+    color: white;
+    background-color: black;
+    width: 69px;
+    display: inline-block;
+}
+
+#reserved {
+    background-color: #494444;
+    color: white;
+    width: 71px;
+    display: inline-block;
+    opacity: 0.2;
+
+}
+
+#selection {
+    background-color: #CD7F32;
+    width: 69px;
+    display: inline-block;
+}
+
+form {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#thanks {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#selectable {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+section ul {
+    padding: 0;
+}
+
+section {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#seats {
+    margin-left: 3%;
+}
+
+#selectable li {
+    margin: .5%;
+    display: inline-block;
+    float: left;
+    width: 15%;
+    height: 80px;
+    padding: 2px;
+    font-size: 1em;
+    text-align: center;
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#help {
+    clear: both;
+}
+
+.available {
+    background-color: black;
+    border-radius: 7px;
+    width: 50%;
+    height: 100px;
+    display: inline-block;
+    color: white;
+}
+
+.available:hover {
+    background-color: #404040;
+    border-radius: 7px;
+    display: inline-block;
+    color: white;
+}
+
+.vip {
+  background-color: #fbbe00;
+  color: black;
+}
+
+.vip:hover {
+  background-color: #ffd24d;
+  color: black;
+}
+
+.reserved {
+    background-color: #494444;
+    border-radius: 7px;
+    display: inline-block;
+    opacity: 0.2;
+    color: white;
+}
+
+.reserved:hover {
+    background-color: #494444;
+    border-radius: 7px;
+    display: inline-block;
+    opacity: .5;
+    color: white;
+}
+
+.bios {
+    font-family: 'Varela Round', cursive;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.bioimg {
+  width: 100%;
+  border-radius: 100%;
+}
+.bioimg:hover {
+  opacity: .9;
+}
+figure {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+    background-color: #CD7F32;
+    color: black;
+}
+
+.active:hover {
+    background-color: #dca570;
+    color: black;
+}
+
+footer {
+    background-color: goldenrod;
+    /*gradient animation*/
+    background: linear-gradient(182deg, #fbbe00, #f9ce4a, #f5db89, #f2e6c0);
+    background-size: 800% 800%;
+    -webkit-animation: header-footer-gradient 10s ease infinite;
+    -moz-animation: header-footer-gradient 10s ease infinite;
+    animation: header-footer-gradient 10s ease infinite;
+    /*gradient animation*/
+    width: 100%;
+    height: auto;
+    text-align: center;
+    height: auto;
+}
+
+#poster {
+    position: relative;
+    margin: 0 auto;
+}
+
+#curtains {
+    position: absolute;
+    width: 70%;
+    height: 480px;
+    left: 15%;
+    margin: 0% auto;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+img {
+    position: relative;
+    width: 50%;
+    min-height: 75%;
+    margin: 0 auto;
+}
+
+#slides {
+    position: relative;
+    width: 25%;
+    display: none;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 480px;
+    z-index: 2;
+}
+
+#slidesjs-container {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.slides {
+    width: 50px;
+    height: 480px;
+}
+
+.background-box {
+    position: absolute;
+    width: 69.5%;
+    height: 471px;
+    left: 15.1%;
+    top: 50px;
+    background-color: black;
+    border: 2px solid transparent;
+    z-index: 1;
+}
+
+.stage-circle {
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 23%;
+    width: 100%;
+    height: 100px;
+    top: 83%;
+    z-index: -1;
+    left: -1px
+}
+
+.wood {
+    position: absolute;
+    border-radius: 23%;
+    width: 100%;
+    height: 100px;
+    left: -1px;
+    top: 2%;
+    z-index: -1;
+}
